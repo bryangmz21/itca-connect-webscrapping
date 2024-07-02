@@ -1,0 +1,16 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://${DB_HOST:141.148.161.172}:${DB_PORT:5432}/${DB_NAME:itca_connect}
+        username: ${DB_USER:itca}
+        password: ${DB_PASS:itca123}
+    application:
+        name: itca-connect-webscrapping
+
+server:
+    port: ${PORT:8080}
+    servlet:
+        context-path: /itca-connect-webscrapping
+
+gemini:
+    url: ${GEMINI_URL:https://generativelanguage.googleapis.com/v1beta/models/}
+    apiKey: ${GEMINI_API_KEY:AIzaSyDl3-zyKOtWbhnEYakcaz8I4jaEPDGVlPk}

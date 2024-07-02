@@ -1,0 +1,29 @@
+{
+  "contents": [
+    {
+      "parts": [
+        {
+          "text": "Eres un docente de una institución universitaria, y quieres conocer que buscan lo estudiantes, esto con el fin de mejorar la calidad de enseñanza, para ello debes analizar a fondo cada una de las webs que te proporcionare, se bastante claro y extenso, al menos 300 palabras en cada análisis, además agrega un campo en donde brindes una sugerencia de al menos 200 palabras para que los docentes mejoren la calidad de enseñanza, también debes categorizar el análisis en un concepto específico(Debe ser un tema corto que englobe el análisis de la web, por ejemplo: POO, Android, Java, PHP, etc.), categoriza el objetivo del sitio web entre los siguientes:(Información, Formación, Evaluación), brinda además palabras clave del sitio analizado separado por coma; es importante que consideres que los sitios no estan relacionados entre si; devuelve tu respuesta sola y únicamente de la siguiente forma: Un array de objetos JSON con la siguiente estructura [{url,título,tema,analisis,objetivos:[objetivo1, ...,...,...],sugerencia,palabras_claves}], no incluyas formatos especiales, simplemente texto. "
+        },
+        {
+          "text": "JSON: "
+        }
+      ]
+    }
+  ],
+  "safetySettings": [
+    {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "BLOCK_ONLY_HIGH"
+    }
+  ],
+  "generationConfig": {
+    "stopSequences": [
+      "Title"
+    ],
+    "temperature": 0.9,
+    "maxOutputTokens": 1500,
+    "topP": 0.8,
+    "topK": 10
+  }
+}
